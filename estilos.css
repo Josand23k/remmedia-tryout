@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /*-- Menu Responsive (Logo, Nombre y Menu) --*/
+  
+  nav {
+    background-color: #d0b8ab;
+    color: #fff;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+    height: 70px;
+  }
+
+  .navbar img {
+    width: 70px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-text {
+    margin-left: 10px;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  .icon {
+    display: none;
+  }
+  
+  /*-- sección de intro --*/
+  
+  .intro-index {
+    padding: 40px 20px;
+    background-color: rgb(232, 252, 223);
+    height: 50vw;
+  }
+  
+  .pop-intro {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3em;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+  }
+
+  .intro-text {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .btn-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+
+  .btn-intro a {
+    text-decoration: none;
+    font-size: 1.1em;
+    width: 150px;
+    background-color: aqua;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  .pop-intro img {
+    width: 45%;
+    background-color: #927d71;
+    height: 300px;
+  }
+  
+/*-- Sección cards servicios --*/
+
+.cards-index {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e6e6;
+    padding: 20px;
+}
+
+.cards-index h2 {
+  padding: 10px;
+}
+
+.cards-intro {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  gap: 1em;
+}
+
+.card-servicios {
+    background-color: #9b9795;
+    border-radius: 10px;
+    height: 200px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.card-servicios .fa {
+  font-size: 2em;
+  color: #393968;
+}
+  
+  /*-- Sección soluciones --*/
+  
+  .box-soluciones {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 60px;
+    padding: 20px;
+    background-color: rgb(185, 208, 255);
+    height: 200px;
+    border-radius: 10px;
+    gap: 20px;
+  }
+
+  .box-soluciones img {
+    width: 45%;
+  }
+
+  /*-- sección Plataformas --*/
+
+  .plataformas-intro {
+    background-color: rgb(246, 213, 201);
+    padding: 30px 60px;
+  }
+
+  .plataformas-intro h3 {
+    text-align: center;
+  }
+
+  .box-plataformas {
+    display: flex;
+    gap: 2em;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .linea-plataforma {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 25px;
+  }
+
+  .linea-plataforma .fab {
+    font-size: 5em;
+  }
+
+  .linea-plataforma a {
+    margin-left: auto;
+    text-decoration: none;
+    background-color: burlywood;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: #494948;
+  }
+  
+  /*-- Footer --*/
+  
+  footer {
+    background-color: rgb(214, 211, 211);
+    padding: 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .info {
+    margin: 20px;
+  }
+  .info h2 {
+    font-size: 1em;
+    line-height: 1.6;
+  }
+  
+  .logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .logo-footer img {
+    width: 90px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: .6em;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2em;
+  }
+  
+  .social-links i {
+    color: #fff;
+  }
+  
+  .copy {
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  /*-- Pagina Cursos --*/
+  .pop-cursos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    background-color: rgb(211, 209, 209);
+    padding: 15px;
+    margin-bottom: 25px;
+    height: 100px;
+  }
+  
+  /*-- Pagina de Contacto --*/
+  
+  .contacto-box {
+    background-color: #dedede;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 250px;
+    gap: 2em;
+  }
+  
+  .correos-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .correos-contacto h2 {
+    font-size: 1.3em;
+  }
+  
+  /*-- MEDIA QUERIES --*/
+  
+  @media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+  
+    .icon {
+        display: block;
+        cursor: pointer;
+        font-size: 1.3em;
+    }
+  
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1;
+    }
+  
+    .menu.active li {
+        margin: 10px 0;
+        text-align: center;
+    }
+  }

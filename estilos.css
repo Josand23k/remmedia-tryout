@@ -244,18 +244,45 @@
     font-size: 12px;
   }
   
-  /*-- Pagina Cursos --*/
-  .pop-cursos {
+  /*-- Pagina Diseño Web --*/
+
+  .intro-dw {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro-dw img {
+    background-color: #393968;
+    width: 100%;
+    height: 50vw;
+  }
+
+  .pop-dw {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  
-    background-color: rgb(211, 209, 209);
-    padding: 15px;
-    margin-bottom: 25px;
-    height: 100px;
+    padding: 30px;
+    gap: 1em;
+  }
+
+  .pop-dw h1 {
+    width: 40%;
+    text-align: center;
   }
   
+  .pop-dw p {
+    width: 60%;
+  }
+
+  /*-- Sección DW --*/
+
+  .container.dw {
+    
+  }
+
   /*-- Pagina de Contacto --*/
   
   .contacto-box {

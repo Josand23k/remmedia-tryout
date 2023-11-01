@@ -279,9 +279,68 @@
 
   /*-- Sección DW --*/
 
-  .container.dw {
+  .container-dw {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: #9b9795;
+  }
+
+  .container-dw h2 {
+    text-align: center;
+  }
+
+  .cards-dw {
+    padding: 20px;
     
   }
+
+  .box-dw {
+    display: flex;
+    gap: 1em;
+    margin: 0px 0px 30px;
+    background-color: rgb(185, 208, 255);
+    border-radius: 10px;
+  }
+
+  .box-dw img {
+    width: 60vw;
+    background-color: #393968;
+    border-radius: 10px;
+  }
+
+  .dw {
+    padding: 10px;
+    width: 80%;
+  }
+
+  .dw h3 {
+    text-align: center;
+  }
+
+  .dw p {
+    padding: 20px 0px;
+  }
+
+  .dw ul {
+    list-style: none;
+    line-height: 1.7;
+  }
+
+  .precios-dw {
+    padding: 20px 0px;
+    text-align: center;
+    line-height: 2.5;
+  }
+
+  .precios-dw a {
+    text-decoration: none;
+    background-color: cadetblue;
+    color: rgb(228, 227, 227);
+    padding: 10px 30px;
+    border-radius: 10px;
+  }
+
 
   /*-- Pagina de Contacto --*/
   

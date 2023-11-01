@@ -341,6 +341,42 @@
     border-radius: 10px;
   }
 
+  /*-- Seccion Beneficios/webdesign page --*/
+
+  .beneficios {
+    padding: 30px;
+  }
+
+  .box-beneficios {
+    background-color: #e1ddda;
+  }
+
+  .box-beneficios h3 {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .beneficios-container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+  }
+
+  .cards-bn {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+  }
+
+  .beneficios-img {
+    background-color: aquamarine;
+    width: 450px;
+  }
+
+  .bene-card h4 {
+    text-align: center;
+  }
+
 
   /*-- Pagina de Contacto --*/
   

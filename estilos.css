@@ -344,11 +344,11 @@
   /*-- Seccion Beneficios/webdesign page --*/
 
   .beneficios {
-    padding: 30px;
+    padding: 20px;
   }
 
   .box-beneficios {
-    background-color: #e1ddda;
+    
   }
 
   .box-beneficios h3 {
@@ -373,8 +373,15 @@
     width: 450px;
   }
 
+  .bene-card {
+    background-color: #d3d3fc;
+    border-radius: 10px;
+    padding: 15px;
+  }
+
   .bene-card h4 {
     text-align: center;
+    padding-bottom: 10px;
   }
 
   /*-- Página de Servicios --*/

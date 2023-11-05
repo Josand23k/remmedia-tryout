@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  :root {
+    --verde: rgb(108, 189, 69);
+    --gris-primary: rgb(91, 86, 81);
+    --gris-leve: rgb(57, 53, 51);
+    --gris-suave: rgb(203, 201, 197);
+    --gris-claro: rgb(231, 231, 230);
+  }
   
   body {
     font-family: Arial, sans-serif;
@@ -11,8 +19,7 @@
   /*-- Menu Responsive (Logo, Nombre y Menu) --*/
   
   nav {
-    background-color: #d0b8ab;
-    color: #fff;
+    background-color: var(--gris-claro);
   }
   
   .navbar {
@@ -29,9 +36,10 @@
   
   .navbar a {
     text-decoration: none;
-    color: #fff;
+    color:var(--gris-primary);
     display: flex;
     align-items: center;
+    font-size: 1.4rem;
   }
   
   .logo-text {
@@ -46,16 +54,30 @@
   .menu li {
     margin-right: 20px;
   }
+
+  .menu a {
+    font-size: 1.1em;
+    transition: transform 0.2s;
+  }
+
+  .menu a:hover {
+    color: var(--gris-leve);
+    transform: scale(1.1);
+  }
   
   .icon {
     display: none;
+    color: var(--gris-primary);
+  }
+
+  .icon:hover {
+    color: var(--gris-leve);
   }
   
   /*-- sección de intro --*/
   
   .intro-index {
     padding: 40px 20px;
-    background-color: rgb(232, 252, 223);
   }
   
   .pop-intro {
@@ -89,15 +111,20 @@
     text-decoration: none;
     font-size: 1.1em;
     width: 150px;
-    background-color: aqua;
+    background-color: var(--gris-claro);
+    color: var(--gris-primary);
     text-align: center;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
+  }
+
+  .btn-intro a:hover {
+    background-color: var(--gris-suave);
   }
 
   .pop-intro img {
     width: 45%;
-    background-color: #927d71;
+    background-color: var(--gris-primary);
     height: 300px;
   }
   
@@ -109,12 +136,13 @@
     gap: 2em;
     justify-content: center;
     align-items: center;
-    background-color: #e6e6e6;
+    background-color: var(--gris-suave);
     padding: 20px;
 }
 
 .cards-index h2 {
   padding: 10px;
+  text-align: center;
 }
 
 .cards-intro {
@@ -125,7 +153,7 @@
 }
 
 .card-servicios {
-    background-color: #9b9795;
+    background-color: var(--gris-claro);
     border-radius: 10px;
     height: 200px;
     width: 30%;
@@ -137,8 +165,18 @@
 }
 
 .card-servicios .fa {
-  font-size: 2em;
-  color: #393968;
+  font-size: 2.2em;
+  color: var(--verde);
+}
+
+.card-box a {
+  text-decoration: none;
+  color: var(--gris-primary);
+
+}
+
+.card-box a:hover {
+  color: var(--gris-leve);
 }
   
   /*-- Sección soluciones --*/
@@ -148,7 +186,7 @@
     flex-direction: row;
     margin: 30px 60px;
     padding: 20px;
-    background-color: rgb(185, 208, 255);
+    background-color: var(--gris-claro);
     height: 200px;
     border-radius: 10px;
     gap: 20px;
@@ -158,10 +196,23 @@
     width: 45%;
   }
 
+  .box-text h3 {
+    padding-bottom: 15px;
+  }
+
+  .box-text a {
+    text-decoration: none;
+    color: var(--gris-primary);
+  }
+
+  .box-text a:hover {
+    color: var(--gris-leve);
+  }
+
   /*-- sección Plataformas --*/
 
   .plataformas-intro {
-    background-color: rgb(246, 213, 201);
+    background-color: var(--gris-suave);
     padding: 30px 60px;
   }
 
@@ -171,7 +222,7 @@
 
   .box-plataformas {
     display: flex;
-    gap: 2em;
+    gap: 1em;
     justify-content: space-around;
     align-items: center;
   }
@@ -185,15 +236,22 @@
 
   .linea-plataforma .fab {
     font-size: 5em;
+    color: var(--gris-leve);
   }
 
   .linea-plataforma a {
+    width: 100%;
     margin-left: auto;
     text-decoration: none;
-    background-color: burlywood;
+    background-color:var(--gris-primary);
     padding: 10px 30px;
     border-radius: 10px;
-    color: #494948;
+    color: var(--gris-claro);
+    text-align: center;
+  }
+
+  .linea-plataforma a:hover {
+    background-color: var(--gris-leve);
   }
   
   /*-- Footer --*/

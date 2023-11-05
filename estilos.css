@@ -5,8 +5,8 @@
   }
 
   :root {
-    --verde: rgb(108, 189, 69);
-    --gris-primary: rgb(91, 86, 81);
+    --verde: #6cbd45;
+    --gris-primary: #5b5651;
     --gris-leve: rgb(57, 53, 51);
     --gris-suave: rgb(203, 201, 197);
     --gris-claro: rgb(231, 231, 230);
@@ -257,7 +257,8 @@
   /*-- Footer --*/
   
   footer {
-    background-color: rgb(214, 211, 211);
+    background-color: var(--gris-leve);
+    color: var(--gris-claro);
     padding: 20px;
   }
   
@@ -270,8 +271,13 @@
   .info {
     margin: 20px;
   }
+
+  .info h3 {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
   .info h2 {
-    font-size: 1em;
+    font-size: 12px;
     line-height: 1.6;
   }
   
@@ -290,16 +296,29 @@
     gap: .6em;
     justify-content: space-around;
     align-items: center;
-    font-size: 2em;
+    font-size: 1.4em;
   }
   
   .social-links i {
-    color: #fff;
+    color: var(--gris-suave);
+  }
+
+  .social-links i:hover {
+    color: var(--verde);
   }
   
   .copy {
     text-align: center;
     font-size: 12px;
+  }
+
+  .copy a {
+    color: var(--gris-claro);
+    text-decoration: none;
+  }
+
+  .copy a:hover {
+    color: var(--verde);
   }
   
   /*-- Pagina Diseño Web --*/

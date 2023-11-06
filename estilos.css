@@ -9,7 +9,7 @@
     --gris-primary: #5b5651;
     --gris-leve: rgb(57, 53, 51);
     --gris-suave: rgb(203, 201, 197);
-    --gris-claro: rgb(231, 231, 230);
+    --gris-claro: rgb(230, 230, 229);
   }
   
   body {
@@ -19,7 +19,8 @@
   /*-- Menu Responsive (Logo, Nombre y Menu) --*/
   
   nav {
-    background-color: var(--gris-claro);
+    background: var(--gris-leve);
+    background: radial-gradient(circle, rgba(230, 230, 229, 1) 100%, rgba(203, 201, 197, 3) 100%);
   }
   
   .navbar {

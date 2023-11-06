@@ -338,7 +338,7 @@
   /*-- Pagina Diseño Web --*/
 
   .intro-dw {
-    background-color: aliceblue;
+    background-color: var(--gris-claro);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -348,7 +348,7 @@
   .intro-dw img {
     background-color: #393968;
     width: 100%;
-    height: 50vw;
+    height: 25vw;
   }
 
   .pop-dw {
@@ -374,11 +374,13 @@
     display: flex;
     flex-direction: column;
     padding: 30px;
-    background-color: #9b9795;
+    background-color: var(--gris-leve);
   }
 
   .container-dw h2 {
     text-align: center;
+    color: var(--verde);
+    font-size: 2em;
   }
 
   .cards-dw {
@@ -390,7 +392,7 @@
     display: flex;
     gap: 1em;
     margin: 0px 0px 30px;
-    background-color: rgb(185, 208, 255);
+    background-color: var(--gris-claro);
     border-radius: 10px;
   }
 
@@ -426,25 +428,28 @@
 
   .precios-dw a {
     text-decoration: none;
-    background-color: cadetblue;
-    color: rgb(228, 227, 227);
-    padding: 10px 30px;
+    background-color: var(--gris-primary);
+    color: var(--gris-claro);
+    padding: 10px 50px;
     border-radius: 10px;
+  }
+
+  .precios-dw a:hover {
+    background-color: var(--gris-leve);
+    color: var(--verde);
   }
 
   /*-- Seccion Beneficios/webdesign page --*/
 
   .beneficios {
-    padding: 20px;
-  }
-
-  .box-beneficios {
-    
+    padding: 50px 30px 80px;
+    background: radial-gradient(circle, rgb(203, 201, 197, .5)20%, rgb(92, 87, 81, .5)96%);
   }
 
   .box-beneficios h3 {
     text-align: center;
     padding: 10px;
+    font-size: 1.6em;
   }
 
   .beneficios-container {
@@ -465,9 +470,12 @@
   }
 
   .bene-card {
-    background-color: #d3d3fc;
+    background-color: var(--gris-claro);
+    box-shadow: 0px 0px 8px var(--gris-leve);
     border-radius: 10px;
     padding: 15px;
+    width: 300px;
+    height: 120px;
   }
 
   .bene-card h4 {

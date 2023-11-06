@@ -5,8 +5,8 @@
   }
 
   :root {
-    --verde: #6cbd45;
-    --gris-primary: #5b5651;
+    --verde: rgb(108, 191, 69);
+    --gris-primary: rgb(92, 87, 81);
     --gris-leve: rgb(57, 53, 51);
     --gris-suave: rgb(203, 201, 197);
     --gris-claro: rgb(230, 230, 229);
@@ -19,8 +19,9 @@
   /*-- Menu Responsive (Logo, Nombre y Menu) --*/
   
   nav {
-    background: var(--gris-leve);
-    background: radial-gradient(circle, rgba(230, 230, 229, 1) 100%, rgba(203, 201, 197, 3) 100%);
+    background: var(--gris-claro);
+    background: radial-gradient(circle,rgb(203, 201, 197, .5) 60%, rgb(92, 87, 81, .4) 79%);
+    
   }
   
   .navbar {
@@ -44,7 +45,8 @@
   }
   
   .logo-text {
-    margin-left: 10px;
+    margin-left: 40px;
+    text-shadow: 3px 3px 5px rgb(92, 87, 81, .5);
   }
   
   .menu {
@@ -188,13 +190,17 @@
     margin: 30px 60px;
     padding: 20px;
     background-color: var(--gris-claro);
-    height: 200px;
+    height: 250px;
     border-radius: 10px;
     gap: 20px;
   }
 
   .box-soluciones img {
     width: 45%;
+  }
+
+  .box-text {
+    width: 50%;
   }
 
   .box-text h3 {
@@ -235,6 +241,10 @@
     padding: 25px;
   }
 
+  .lp-1 {
+    width: 50%;
+  }
+
   .linea-plataforma .fab {
     font-size: 5em;
     color: var(--gris-leve);
@@ -249,10 +259,13 @@
     border-radius: 10px;
     color: var(--gris-claro);
     text-align: center;
+    letter-spacing: 1.2px;
+    font-weight: bold;
   }
 
   .linea-plataforma a:hover {
     background-color: var(--gris-leve);
+    color: var(--verde); 
   }
   
   /*-- Footer --*/

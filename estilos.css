@@ -46,7 +46,7 @@
   
   .logo-text {
     margin-left: 40px;
-    text-shadow: 3px 3px 5px rgb(92, 87, 81, .5);
+    text-shadow: 0px 0px 8px rgb(92, 87, 81, .5);
   }
   
   .menu {
@@ -392,6 +392,7 @@
     display: flex;
     gap: 1em;
     margin: 0px 0px 30px;
+    padding: 20px;
     background-color: var(--gris-claro);
     border-radius: 10px;
   }
@@ -486,26 +487,53 @@
   /*-- Página de Servicios --*/
 
   .intro-servicios {
+    background-color: var(--gris-suave);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    height: 33vw;
   }
 
 .card-serv {
-  background-color: rgb(204, 204, 223);
   border-radius: 10px;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 5em;
   text-align: center;
+}
+
+.cards-serv {
+  background-color: var(--verde);
+  box-shadow: 0px 0px 8px var(--gris-leve);
+  border-radius: 10px;
+  padding: 15px;
+
+  width: 300px;
+}
+
+.cards-serv h2 {
+  padding-bottom: 15px;
+}
+
+.cards-serv p {
+  padding-bottom: 15px;
+}
+
+.cards-serv i {
+  font-size: 1.6em;
 }
 
 .img-servicios {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.img-servicios img {
+  width: 200px;
+  padding: 50px 20px;
 }
 
 .serv-card-img {
@@ -515,6 +543,37 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.serv-card-img p {
+  width: 250px;
+}
+
+/*-- Carrusel --*/
+.servicios-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 10px 20px 50px;
+  background-color: var(--gris-claro);
+}
+
+.servicios-bottom h4 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+}
+
+.carousel i {
+  font-size: 3em;
+  color: var(--verde);
 }
 
   /*-- Pagina de Contacto --*/

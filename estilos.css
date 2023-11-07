@@ -115,6 +115,7 @@
     font-size: 1.1em;
     width: 150px;
     background-color: var(--gris-claro);
+    box-shadow: 0px 0px 5px var(--gris-leve);
     color: var(--gris-primary);
     text-align: center;
     border-radius: 10px;
@@ -126,9 +127,7 @@
   }
 
   .pop-intro img {
-    width: 45%;
-    background-color: var(--gris-primary);
-    height: 300px;
+    width: 40%;
   }
   
 /*-- Sección cards servicios --*/
@@ -157,6 +156,7 @@
 
 .card-servicios {
     background-color: var(--gris-claro);
+    box-shadow: 0px 0px 8px var(--gris-leve);
     border-radius: 10px;
     height: 200px;
     width: 30%;
@@ -190,6 +190,7 @@
     margin: 30px 60px;
     padding: 20px;
     background-color: var(--gris-claro);
+    box-shadow: 0px 0px 8px var(--gris-leve);
     height: 250px;
     border-radius: 10px;
     gap: 20px;
@@ -251,10 +252,12 @@
   }
 
   .linea-plataforma a {
-    width: 100%;
+    width: 60%;
     margin-left: auto;
+    margin-right: auto;
     text-decoration: none;
     background-color:var(--gris-primary);
+
     padding: 10px 30px;
     border-radius: 10px;
     color: var(--gris-claro);
@@ -287,11 +290,12 @@
   }
 
   .info h3 {
-    font-size: 14px;
+    font-size: 1.3em;
     padding-bottom: 10px;
+    color: var(--verde);
   }
   .info h2 {
-    font-size: 12px;
+    font-size: .9em;
     line-height: 1.6;
   }
   
@@ -307,14 +311,14 @@
   
   .social-links {
     display: flex;
-    gap: .6em;
+    gap: 1.2em;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.4em;
   }
   
   .social-links i {
     color: var(--gris-suave);
+    font-size: 2em;
   }
 
   .social-links i:hover {
@@ -578,24 +582,95 @@
 
   /*-- Pagina de Contacto --*/
   
+  .contacto-intro {
+    background-color: var(--gris-primary);
+    padding: 30px 80px 50px;
+  }
+
+  .contacto-intro h1 {
+    color: var(--verde);
+    text-align: center;
+    padding: 50px 0px 30px;
+    font-size: 2.5em;
+  }
   .contacto-box {
-    background-color: #dedede;
+    background-color: var(--gris-claro);
+    box-shadow: 0px 0px 12px var(--gris-leve);
+    border-radius: 10px;
     display: flex;
-    justify-content: center;
+    padding: 20px;
+  }
+
+  .contacto-info {
+    display: flex;
     flex-direction: column;
-    padding: 20px 250px;
     gap: 2em;
+    align-items: center;
+    justify-content: center;
   }
-  
-  .correos-contacto {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+
+  .contacto-info p {
+    text-align: center;
+    font-size: 1.1em;
+    width: 90%;
   }
-  .correos-contacto h2 {
-    font-size: 1.3em;
+
+  .contacto-info ul {
+    list-style-type: none;
+    line-height: 1.8;
   }
-  
+
+.map iframe {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px var(--gris-leve);
+}
+
+    /*-- formulario cotizar --*/
+
+.form-cotizar {
+  background-color: var(--gris-leve);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+}
+
+.form-cotizar h2 {
+  padding-bottom: 30px;
+  color: var(--verde);
+  letter-spacing: 1.4px;
+}
+
+.form-cotizar form {
+  background-color: var(--gris-suave);
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+}
+
+.ingrese {
+  margin-top: 5px;
+  width: 300px;
+  padding: 2px;
+}
+
+textarea {
+  width: 300px;
+}
+
+.btn-form {
+  padding: 10px 50px;
+  background-color: var(--gris-primary);
+  color: var(--gris-claro);
+  font-size: 1em;
+}
+
+.btn-form:hover {
+  background-color: var(--gris-leve);
+  color: var(--verde);
+}
+
   /*-- MEDIA QUERIES --*/
   
   @media screen and (max-width: 768px) {

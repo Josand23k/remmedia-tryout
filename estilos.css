@@ -375,9 +375,10 @@
   }
 
   .intro-dw img {
-    background-color: #393968;
+    background-color: var(--gris-leve);
     width: 100%;
     height: 25vw;
+    object-fit: cover;
   }
 
   .pop-dw {
@@ -391,10 +392,14 @@
   .pop-dw h1 {
     width: 40%;
     text-align: center;
+    font-size: 2em;
   }
   
   .pop-dw p {
     width: 60%;
+    font-size: 1.1em;
+    letter-spacing: 1.2px;
+    line-height: 1.3;
   }
 
   /*-- Sección DW --*/
@@ -410,6 +415,7 @@
     text-align: center;
     color: var(--verde);
     font-size: 2em;
+    padding-bottom: 1em;
   }
 
   .cards-dw {
@@ -427,9 +433,10 @@
   }
 
   .box-dw img {
-    width: 60vw;
-    background-color: #393968;
+    width: 60%;
+    height: 350px;
     border-radius: 10px;
+    object-fit: cover;
   }
 
   .dw {
@@ -439,6 +446,7 @@
 
   .dw h3 {
     text-align: center;
+    font-size: 1.8em;
   }
 
   .dw p {
@@ -495,10 +503,13 @@
   }
 
   .beneficios-img {
-    background-color: aquamarine;
     width: 450px;
   }
 
+  .beneficios-img img {
+    width: 100%;
+    object-fit: cover;
+  }
   .bene-card {
     background-color: var(--gris-claro);
     box-shadow: 0px 0px 8px var(--gris-leve);

@@ -709,10 +709,11 @@
   display: flex;
   justify-content: space-around;
   gap: 2em;
+  padding: 0px 30px;
 }
 
 .carousel i {
-  font-size: 3em;
+  font-size: 4em;
   color: var(--verde);
 }
 

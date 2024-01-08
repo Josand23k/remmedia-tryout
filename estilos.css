@@ -604,12 +604,11 @@
   /*-- Página de Servicios --*/
 
   .intro-servicios {
-    background-color: var(--gris-suave);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
-    height: 33vw;
+    padding: 4em;
+    
   }
 
 .card-serv {
@@ -622,24 +621,28 @@
 }
 
 .cards-serv {
-  background-color: var(--verde);
+  background-color: var(--gris-suave);
   box-shadow: 0px 0px 8px var(--gris-leve);
   border-radius: 10px;
   padding: 15px;
-
   width: 300px;
 }
 
 .cards-serv h2 {
   padding-bottom: 15px;
+  font-family: var(--ff-style);
+  color: var(--gris-leve);
 }
 
 .cards-serv p {
   padding-bottom: 15px;
+  font-size: 1.2em;
+  color: var(--gris-leve);
 }
 
 .cards-serv i {
   font-size: 1.6em;
+  color: var(--gris-leve);
 }
 
 .img-servicios {
@@ -649,7 +652,7 @@
 }
 
 .img-servicios img {
-  width: 200px;
+  width: 300px;
   padding: 50px 20px;
 }
 
@@ -662,8 +665,16 @@
   text-align: center;
 }
 
+.serv-card-img h1 {
+  color: var(--verde);
+  font-family: var(--ff-style);
+  font-size: 2em;
+}
+
 .serv-card-img p {
-  width: 250px;
+  color: var(--gris-suave);
+  width: 300px;
+  font-size: 1.2em;
 }
 
 /*-- Carrusel --*/

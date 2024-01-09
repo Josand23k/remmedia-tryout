@@ -1063,3 +1063,115 @@ textarea {
       
     }
   }
+
+  @media  (max-width: 600px) {
+    /*-- NAVBAR --*/
+    .logo {
+      width: 100%;
+      padding: 0;
+
+    }
+    .logo-text {
+      font-size: 1.2em;
+      width: 100%;
+    }
+
+    /*-- FOOTER --*/
+    .footer-box {
+      flex-direction: column;
+      align-items: baseline;
+    }
+
+    .copy {
+      text-align: center;
+    }
+
+    /*-- INDEX PAGE --*/
+    /*-- Intro Sección --*/
+    .pop-intro img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    /*-- Sección cards --*/
+    .card-servicios {
+      flex-direction: column;
+    }
+    /*-- Sección plataformas --*/
+    .linea-plataforma { /*-- Contenedor de Iconos --*/
+      gap: 3em;
+    }
+    .linea-plataforma .fab { /*-- Tamaño de los iconocs --*/
+      font-size: 3em;
+    }
+    .lp-1 {
+      padding: 0;
+    }
+
+    /*-- WEB DESIGN PAGE --*/
+    /*-- Sección Intro --*/
+    .pop-dw {
+      flex-direction: column;
+      padding: 15px;
+    }
+    .pop-dw h1 {
+      width: 100%;
+    }
+    .pop-dw p {
+      width: 100%;
+    }
+
+    /*-- Sección cards --*/
+    .container-dw {
+      padding: 20px;
+    }
+    .container-dw h2 {
+      font-size: 1.7em;
+    }
+    .cards-dw {
+      padding: 0;
+    }
+
+    /*-- Sección Beneficios --*/
+    .box-beneficios h3 {
+      font-size: 1.8em;
+    }
+    .beneficios-container {
+      flex-direction: column;
+    }
+
+    .beneficios-img img {
+      height: 150px;
+    }
+
+    /*-- SOLUCIONES WEB PAGE --*/
+    /*-- Sección Intro --*/
+    .card-serv {
+      flex-direction: column;
+    }
+    .cards-serv {
+      height: 150px;
+    }
+
+    /*-- Sección carousel --*/
+    .carousel {
+      gap: .7em;
+    }
+    .carousel i {
+      font-size: 1.2em;
+    }
+
+    /*-- CONTACTP PAGE --*/
+    /*-- Sección Intro --*/
+    .contacto-intro {
+      padding: 20px;
+    }
+    .contacto-intro h1 {
+      padding: 10px;
+    }
+
+    /*-- SEcción Map --*/
+    .contacto-info {
+      padding-bottom: 20px;
+    }
+  }

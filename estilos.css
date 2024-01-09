@@ -1133,15 +1133,22 @@ textarea {
     }
 
     /*-- Sección Beneficios --*/
+    .bene-card {
+      width: 100%;
+    }
     .box-beneficios h3 {
       font-size: 1.8em;
     }
     .beneficios-container {
       flex-direction: column;
     }
+    .beneficios-img {
+      width: 100%;
+    }
 
     .beneficios-img img {
       height: 150px;
+      object-fit: cover;
     }
 
     /*-- SOLUCIONES WEB PAGE --*/

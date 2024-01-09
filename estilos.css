@@ -85,11 +85,11 @@
   /*-- Hamburger (three line) toggle --*/
   .icon {
     display: none;
-    color: var(--gris-primary);
+    color: var(--verde);
   }
 
   .icon:hover {
-    color: var(--gris-leve);
+    color: var(--gris-claro);
   }
   
 
@@ -815,8 +815,87 @@ textarea {
 }
 
   /*-- MEDIA QUERIES --*/
+  @media screen and (max-width: 992px) {
+    /*-- Navbar Meduim devices --*/
+    .logo img {   /*-- Logo & Name --*/
+      width: 60px;
+    }
+    .logo-text {
+      font-size: 1.3em;
+    }
+
+    .menu a {   /*-- Text Nav menu --*/
+      font-size: 1em;
+    }
+
+      /*-- INDEX PAGE --*/
+    /*-- Intro --*/
+    .intro-index {
+      padding: 30px 0px;
+    }
+    .pop-intro {
+      padding: 0px;
+    }
+    .intro-text h1 {
+      font-size: 1.6em;
+    }
+    .intro-text span {
+      font-size: 1.3em;
+    }
+
+    /*-- Sección soluciones --*/
+    .box-soluciones {
+      margin: 30px;
+      height: 350px;
+    }
+    .box-text {
+      width: 60%;
+    }
+    .box-soluciones img {
+      width: 38%;
+    }
+    /*-- FOOTER --*/
+    .logo-footer img {
+      width: 90px;
+    }
+
+    /*-- SOLUCIONES WEB PAGE --*/
+    /*-- Sección intro --*/
+    .intro-servicios {
+      padding: 2em 0em;
+    }
+
+    .cards-serv {
+      width: 200px;
+      height: 180px;
+    }
+
+    .card-serv {
+      gap: 3em;
+    }
+
+    .img-servicios img {
+      width: 270px;
+    }
+
+    .serv-card-img h1 {
+      font-size: 1.4em;
+    }
+    .serv-card-img p {
+      font-size: 1.1em;
+    }
+
+    /*-- Sección carrusel --*/
+    .carousel i {
+      font-size: 2.5em;
+    }
+  }
   
   @media screen and (max-width: 768px) {
+    /*-- NAVBAR --*/
+    .logo {
+      width: 70%;
+    }
     .menu {
         display: none;
     }
@@ -824,9 +903,8 @@ textarea {
     .icon {
         display: block;
         cursor: pointer;
-        font-size: 1.3em;
+        font-size: 2em;
     }
-  
     .menu.active {
         display: flex;
         flex-direction: column;
@@ -835,12 +913,59 @@ textarea {
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #333;
+        background-color: black;
         z-index: 1;
     }
   
-    .menu.active li {
+    .menu.active a {
         margin: 10px 0;
         text-align: center;
+    }
+
+    /*-- INDEX PAGE --*/
+    .pop-intro {
+      width: 100%;
+      flex-direction: column;
+    }
+    .intro-text {
+      width: 90%;
+    }
+
+    /*-- Sección cards --*/
+    .cards-intro {
+      flex-direction: column;
+    }
+    .card-servicios {
+      flex-direction: row;
+      width: 100%;
+    }
+    /*-- Sección soluciones --*/
+    .box-soluciones {
+      flex-direction: column;
+      height: 100%;
+      margin: 20px;
+    }
+    .box-text {
+      width: 100%;
+    }
+    .box-soluciones img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    /*-- Sección plataformas --*/
+    .box-plataformas {
+      flex-direction: column;
+    }
+    .linea-plataforma {
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 5em;
+    }
+    .lp-1 {
+      width: 100%;
+      flex-direction: column;
+      gap: 1em;
     }
   }

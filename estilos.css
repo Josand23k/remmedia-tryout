@@ -65,23 +65,20 @@
   /*-- navbar menu --*/
   .menu {
     list-style: none;
-    width: 60%;
+    width: 50%;
     display: flex;
-    justify-content: center;
-  }
-  
-  .menu li {
-    margin-right: 20px;
+    justify-content: space-around;
   }
 
   .menu a {
     font-size: 1.2em;
     transition: transform 0.2s;
     letter-spacing: 1.3px;
+    color: var(--gris-suave);
   }
 
   .menu a:hover {
-    color: var(--gris-suave);
+    color: var(--verde);
     transform: scale(1.1);
   }
   
@@ -490,7 +487,7 @@
 
   .box-dw img {
     width: 60%;
-    height: 350px;
+    height: 500px;
     border-radius: 10px;
     object-fit: cover;
   }
@@ -621,7 +618,7 @@
 }
 
 .cards-serv {
-  background-color: var(--gris-suave);
+  background-color: var(--gris-claro);
   box-shadow: 0px 0px 8px var(--gris-leve);
   border-radius: 10px;
   padding: 15px;
@@ -720,19 +717,19 @@
   /*-- Pagina de Contacto --*/
   
   .contacto-intro {
-    background-color: var(--gris-primary);
     padding: 30px 80px 50px;
   }
 
   .contacto-intro h1 {
     color: var(--verde);
+    font-family: var(--ff-style);
     text-align: center;
     padding: 50px 0px 30px;
     font-size: 2.5em;
   }
   .contacto-box {
     background-color: var(--gris-claro);
-    box-shadow: 0px 0px 12px var(--gris-leve);
+    box-shadow: 0px 0px 12px var(--verde);
     border-radius: 10px;
     display: flex;
     padding: 20px;
@@ -750,11 +747,13 @@
     text-align: center;
     font-size: 1.1em;
     width: 90%;
+    font-size: 1.4em;
   }
 
   .contacto-info ul {
     list-style-type: none;
     line-height: 1.8;
+    font-size: 1.2em;
   }
 
 .map iframe {
@@ -771,12 +770,14 @@
   align-items: center;
   justify-content: center;
   padding: 70px;
+  border: 0px 4px solid var(--verde) ;
 }
 
 .form-cotizar h2 {
   padding-bottom: 30px;
   color: var(--verde);
   letter-spacing: 1.4px;
+  font-size: 2em;
 }
 
 .form-cotizar form {
@@ -792,6 +793,10 @@
   padding: 2px;
 }
 
+form label {
+  font-size: 1.2em;
+}
+
 textarea {
   width: 300px;
 }
@@ -801,6 +806,7 @@ textarea {
   background-color: var(--gris-primary);
   color: var(--gris-claro);
   font-size: 1em;
+  font-family: var(--ff-style);
 }
 
 .btn-form:hover {

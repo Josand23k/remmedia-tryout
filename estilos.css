@@ -349,6 +349,12 @@
     justify-content: space-around;
     align-items: center;
   }
+
+  .footer-box {
+    width: 100%;
+    display: flex;
+    gap: 4em;
+  }
   
   .info {
     margin: 20px;
@@ -385,6 +391,13 @@
     width: 120px;
   }
   
+  .icons-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+  }
   .social-links {
     display: flex;
     gap: 1.2em;
@@ -406,6 +419,7 @@
     justify-content: center;
     align-items: center;
     font-size: 12px;
+    margin-top: 20px;
   }
 
   .copy a {
@@ -931,6 +945,28 @@ textarea {
       width: 90%;
     }
 
+    /*-- FOOTER --*/
+   .footer-links {
+    flex-direction: column;
+   }
+
+   .footer-box {
+    width: 85%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+   }
+
+   .info {
+    width: 45%;
+   }
+   .icons-footer {
+    padding: 20px;
+   }
+   .social-links {
+    gap: 3em;
+   }
+
     /*-- Sección cards --*/
     .cards-intro {
       flex-direction: column;
@@ -955,6 +991,9 @@ textarea {
     }
 
     /*-- Sección plataformas --*/
+    .plataformas-intro {
+      padding: 30px;
+    }
     .box-plataformas {
       flex-direction: column;
     }

@@ -17,19 +17,20 @@
 
     /*-- FONTS --*/
     --ff-style: 'Play', sans-serif;
-    --ff-primary: 'Arial, sans-serif';
+    --ff-primary: 'Arial';
   }
   
   body {
     font-family: var(--ff-primary);
-    background-color: black;
-    background-image: url('imagenes/fondo-a&v.webp');
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+    background-color: var(--gris-claro);
+    color: var(--gris-leve);
   }
   
   /*-- Menu Responsive (Logo, Nombre y Menu) --*/
     .navbar {
+    background-color: var(--gris-suave);
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -43,7 +44,7 @@
   
   .navbar a {
     text-decoration: none;
-    color:var(--verde);
+    color:var(--gris-leve);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -74,7 +75,7 @@
     font-size: 1.2em;
     transition: transform 0.2s;
     letter-spacing: 1.3px;
-    color: var(--gris-suave);
+    color: var(--gris-leve);
   }
 
   .menu a:hover {
@@ -100,40 +101,43 @@
   }
   
   .pop-intro {
-    width: 90%;
+    width: 85%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 1.3em;
-    padding: 20px;
+    gap: 1.3em;   
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
   }
 
   .intro-text {
-    width: 55%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 1em;
   }
 
   .intro-text h1 {
-    font-family: var(--ff-style);
-    color: var(--verde);
-    font-size: 2.5em;
+    font-family: var(--ff-primary);
+    color: var(--gris-leve);
+    font-size: 2em;
+    text-align: center;
+    padding-top: 70px;
+    width: 70%;
+
   }
 
   .intro-text span {
-    font-family: var(--ff-style);
-    color: var(--gris-claro);
+    font-family: var(--ff-primary);
+    color: var(--gris-leve);
     font-size: 1.6em;
   }
 
   .intro-text p {
     font-size: 1.1em;
-    color: var(--gris-claro);
+    color: var(--gris-leve);
     line-height: 1.5;
     letter-spacing: 1.2px;
   }
@@ -148,21 +152,15 @@
     text-decoration: none;
     font-size: 1.1em;
     font-weight: bold;
-    width: 150px;
-    background-color: var(--gris-suave);
-    box-shadow: 0px 0px 5px var(--gris-leve);
+    border-left: 4px solid var(--verde);
     color: var(--gris-leve);
     text-align: center;
-    border-radius: 10px;
-    padding: 10px;
-  }
-
-  .btn-intro a:hover {
-    background-color: var(--verde);
+    padding: 5px;
+    text-transform: uppercase;
   }
 
   .pop-intro img {
-    width: 40%;
+    width: 70%;
   }
   
 /*-- Sección cards servicios --*/
@@ -171,37 +169,28 @@
     display: flex;
     flex-direction: column;
     gap: 2em;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--gris-suave);
-    padding: 20px;
+    background-color: var(--gris-leve);
+    padding: 5em;
 }
 
 .cards-index h2 {
-  padding: 10px;
-  text-align: center;
+  width: 35%;
   font-family: var(--ff-style);
-  font-size: 1.4em;
+  font-size: 1.8em;
+  color: var(--gris-claro);
 }
 
 .cards-intro {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
-  gap: 1em;
 }
 
 .card-servicios {
-    background-color: var(--gris-claro);
-    box-shadow: 0px 0px 8px var(--gris-leve);
-    border-radius: 10px;
     width: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 1em;
-    padding: 20px;
 }
 
 .card-servicios img {
@@ -214,50 +203,53 @@
 .card-servicios .fa {
   font-size: 2.2em;
   color: var(--verde);
+  text-align: center;
 }
 
-.card-box a {
+.card-box h3 {
   text-decoration: none;
-  color: var(--gris-primary);
-
+  color: var(--gris-claro);
+  width: 80%;
+  font-size: 1.6em;
+  text-align: center;
+  height: 90px;
 }
 
-.card-box a:hover {
-  color: var(--gris-leve);
+.card-servicios p {
+  color: var(--gris-claro);
+  line-height: 1.4;
+  letter-spacing: 1.2px;
 }
   
   /*-- Sección soluciones --*/
   
-  .box-soluciones {
+  .box-text {
     display: flex;
     flex-direction: row;
     margin: 30px 60px;
     padding: 20px;
-    background-color: var(--gris-claro);
-    box-shadow: 0px 0px 8px var(--gris-leve);
     height: 300px;
     border-radius: 10px;
-    gap: 20px;
+    gap: 4em;
   }
 
-  .box-soluciones img {
+  .box-text img {
     width: 45%;
     object-fit: cover;
   }
 
-  .box-text {
-    width: 50%;
-  }
-
   .box-text h3 {
     padding-bottom: 15px;
-    font-size: 1.4em;
-    font-family: var(--ff-style);
+    font-size: 1.9em;
+    font-family: var(--ff-primary);
+    color: var(--gris-suave);
+    text-transform: uppercase;
   }
 
   .box-text p {
     font-size: 1.1em;
     line-height: 1.4;
+    color: var(--gris-claro);
   }
 
   .box-text a {
@@ -269,6 +261,12 @@
     color: var(--gris-leve);
   }
 
+  .text-soluciones {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+
   /*-- sección Plataformas --*/
 
   .plataformas-intro {
@@ -277,14 +275,17 @@
   }
 
   .plataformas-intro h3 {
-    text-align: center;
-    font-family: var(--ff-style);
-    font-size: 1.7em;
+    width: 40%;
+    font-size: 2em;
+  }
+
+  .plataformas-intro span {
+    font-size: 1.3em;
   }
 
   .box-plataformas {
     display: flex;
-    gap: 1em;
+    
     justify-content: space-around;
     align-items: center;
   }
@@ -292,7 +293,7 @@
   .linea-plataforma {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 1em;
     padding: 25px;
   }
 
@@ -333,52 +334,50 @@
   }
   
   /*-- Footer --*/
-  
   footer {
-    color: var(--gris-claro);
+    color: var(--gris-leve);
     padding: 20px;
-
-    background-color: black;
-    background-image: url('imagenes/fondo-navbar.webp');
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
-    background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
   }
   
   .footer-links {
     display: flex;
+    flex-direction: column;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
   }
 
   .footer-box {
-    width: 100%;
+    width: 80%;
     display: flex;
+    justify-content: space-around;
     gap: 4em;
   }
   
   .info {
+    width: 30%;
     margin: 20px;
   }
 
   .info h3 {
     font-size: 1.3em;
     padding-bottom: 10px;
-    color: var(--verde);
+    color: var(--gris-leve);
   }
   .info a {
     display: flex;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.6;
     text-decoration: none;
-    color: var(--gris-claro);
+    color: var(--gris-leve);
   }
 
   .info p {
     display: flex;
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.6;
     text-decoration: none;
-    color: var(--gris-claro);
+    color: var(--gris-leve);
   }
   
   .logo-footer {
@@ -400,18 +399,25 @@
   }
   .social-links {
     display: flex;
-    gap: 1.2em;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 2em;
     align-items: center;
   }
   
   .social-links i {
-    color: var(--gris-suave);
-    font-size: 2em;
+    color: var(--gris-leve);
+    font-size: 2.2em;
   }
 
   .social-links i:hover {
     color: var(--verde);
+  }
+
+  .social-box {
+    display: flex;
+    gap: 1.2em;
+    justify-content: space-around;
+    align-items: center;
   }
   
   .copy {
@@ -423,7 +429,7 @@
   }
 
   .copy a {
-    color: var(--gris-claro);
+    color: var(--gris-leve);
     text-decoration: none;
   }
 
@@ -434,11 +440,7 @@
   /*-- Pagina Diseño Web --*/
 
   .intro-dw {
-    background-color: var(--gris-claro);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 6em 4em;
   }
 
   .intro-dw img {
@@ -475,7 +477,7 @@
   .container-dw {
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 4em;
   }
 
   .container-dw h2 {
@@ -487,7 +489,6 @@
 
   .cards-dw {
     padding: 20px;
-    
   }
 
   .box-dw {
@@ -507,14 +508,15 @@
   }
 
   .dw {
+    display: flex;
     padding: 10px;
     width: 80%;
   }
 
   .dw h3 {
     text-align: center;
-    font-family: var(--ff-style);
-    font-size: 1.8em;
+    padding: 10px;
+    font-size: 2.2em;
   }
 
   .dw p {
@@ -527,6 +529,9 @@
     list-style: none;
     font-size: 1.2em;
     line-height: 1.7;
+  }
+  .dw-textbox .fa {
+    color: var(--verde);
   }
 
   .precios-dw {

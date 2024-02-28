@@ -10,6 +10,7 @@
   :root {
     /* -- COLORES --*/
     --verde: rgb(108, 191, 69);
+    --verde-oscuro: rgb(27, 84, 0);
     --gris-primary: rgb(92, 87, 81);
     --gris-leve: rgb(57, 53, 51);
     --gris-suave: rgb(203, 201, 197);
@@ -36,6 +37,8 @@
     align-items: center;
     padding: 10px 20px;
     height: 70px;
+    z-index: 100;
+    border-bottom: 2px solid var(--verde-oscuro);
   }
 
   .navbar img {
@@ -79,7 +82,7 @@
   }
 
   .menu a:hover {
-    color: var(--verde);
+    color: var(--verde-oscuro);
     transform: scale(1.1);
   }
   
@@ -96,72 +99,80 @@
 
   /*-- sección de intro --*/
   
-  .intro-index {
-    padding: 30px 20px;
-  }
-  
-  .pop-intro {
-    width: 85%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 1.3em;   
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px;
-  }
+.intro-index {
+  background-color: var(--gris-claro);
+  position: relative;
+  height: 550px;
+}
+.intro-index img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+}
 
-  .intro-text {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-  }
+.intro-text {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  position: absolute;
+  z-index: 5;
+  top: 30%;
+  left: 10%;
+  box-shadow: 0px 6px 4px var(--verde);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(10, 10, 10, 0.7);
+}
 
-  .intro-text h1 {
-    font-family: var(--ff-primary);
-    color: var(--gris-leve);
-    font-size: 2em;
-    text-align: center;
-    padding-top: 70px;
-    width: 70%;
+.intro-text h1 {
+  font-family: var(--ff-primary);
+  color: var(--gris-claro);
+  font-size: 2.5em;
+  text-align: center;
+}
 
-  }
+.intro-text span {
+  font-family: var(--ff-style);
+  color: var(--verde);
+  font-size: 2em;
+}
 
-  .intro-text span {
-    font-family: var(--ff-primary);
-    color: var(--gris-leve);
-    font-size: 1.6em;
-  }
+.intro-text p {
+  font-size: 1.1em;
+  color: var(--gris-leve);
+  line-height: 1.5;
+  letter-spacing: 1.2px;
+}
+.btn-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
 
-  .intro-text p {
-    font-size: 1.1em;
-    color: var(--gris-leve);
-    line-height: 1.5;
-    letter-spacing: 1.2px;
-  }
-  .btn-intro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-  }
+.btn-intro a {
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-left: 4px solid var(--verde);
+  color: var(--gris-leve);
+  text-align: center;
+  padding: 5px;
+  text-transform: uppercase;
+}
 
-  .btn-intro a {
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: bold;
-    border-left: 4px solid var(--verde);
-    color: var(--gris-leve);
-    text-align: center;
-    padding: 5px;
-    text-transform: uppercase;
-  }
-
-  .pop-intro img {
-    width: 70%;
-  }
+/*-- Welcome sección --*/
+.welcome {
+  padding: 2em;
+  background-color: var(--gris-claro);
+  font-family: var(--ff-primary);
+  font-size: 1.1em;
+  line-height: 25px;
+  letter-spacing: 1.5px;
+}
   
 /*-- Sección cards servicios --*/
 
@@ -169,15 +180,15 @@
     display: flex;
     flex-direction: column;
     gap: 2em;
-    background-color: var(--gris-leve);
-    padding: 5em;
+    background-color: var(--gris-claro);
+    padding: 0em 2em 2em;
 }
 
 .cards-index h2 {
-  width: 35%;
   font-family: var(--ff-style);
-  font-size: 1.8em;
-  color: var(--gris-claro);
+  font-size: 2.2em;
+  color: var(--gris-leve);
+  text-align: center;
 }
 
 .cards-intro {
@@ -191,28 +202,31 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
+    background-color: var(--gris-suave);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(10, 10, 10, .7);
+    text-decoration: none;
 }
 
 .card-servicios img {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .card-servicios .fa {
   font-size: 2.2em;
   color: var(--verde);
   text-align: center;
+  padding: 10px;
 }
 
 .card-box h3 {
   text-decoration: none;
-  color: var(--gris-claro);
-  width: 80%;
+  color: var(--gris-leve);
   font-size: 1.6em;
   text-align: center;
-  height: 90px;
 }
 
 .card-servicios p {
@@ -335,8 +349,9 @@
   
   /*-- Footer --*/
   footer {
-    color: var(--gris-leve);
+    background-color: var(--gris-leve);
     padding: 20px;
+    color: var(--gris-suave);
   }
   
   .footer-links {
@@ -362,14 +377,14 @@
   .info h3 {
     font-size: 1.3em;
     padding-bottom: 10px;
-    color: var(--gris-leve);
+    color: var(--gris-claro);
   }
   .info a {
     display: flex;
     font-size: 1.1em;
     line-height: 1.6;
     text-decoration: none;
-    color: var(--gris-leve);
+    color: var(--gris-claro);
   }
 
   .info p {
@@ -377,7 +392,7 @@
     font-size: 1.1em;
     line-height: 1.6;
     text-decoration: none;
-    color: var(--gris-leve);
+    color: var(--gris-claro);
   }
   
   .logo-footer {
@@ -405,7 +420,7 @@
   }
   
   .social-links i {
-    color: var(--gris-leve);
+    color: var(--gris-claro);
     font-size: 2.2em;
   }
 
@@ -429,7 +444,7 @@
   }
 
   .copy a {
-    color: var(--gris-leve);
+    color: var(--gris-claro);
     text-decoration: none;
   }
 
@@ -440,96 +455,64 @@
   /*-- Pagina Diseño Web --*/
 
   .intro-dw {
-    padding: 6em 4em;
+    position: relative;
+    height: 550px;
   }
 
   .intro-dw img {
     background-color: var(--gris-leve);
     width: 100%;
-    height: 25vw;
+    height: 100%;
     object-fit: cover;
+    position: absolute;
   }
 
-  .pop-dw {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 30px;
-    gap: 1em;
-  }
-
-  .pop-dw h1 {
-    width: 40%;
-    text-align: center;
+  .intro-dw h1 {
+    position: absolute;
+    top: 40%;
+    left: 10%;
     font-family: var(--ff-style);
-    font-size: 2em;
-  }
-  
-  .pop-dw p {
-    width: 60%;
-    font-size: 1.2em;
-    letter-spacing: 1.2px;
-    line-height: 1.3;
+    font-size: 5em;
+    width: 40%;
+    color: var(--verde);
+    background-color: rgba(10, 10, 10, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 4px var(--verde);
   }
 
-  /*-- Sección DW --*/
+  /*-- Sección welcome diseño web --*/
 
   .container-dw {
     display: flex;
     flex-direction: column;
-    padding: 4em;
+    padding: 3em;
   }
 
   .container-dw h2 {
     text-align: center;
     color: var(--verde);
-    font-size: 2em;
+    font-size: 3em;
     padding-bottom: 1em;
   }
-
-  .cards-dw {
-    padding: 20px;
+  .container-dw p {
+    font-size: 1.1em;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+    margin-bottom: 1em;
   }
 
-  .box-dw {
-    display: flex;
-    gap: 1em;
-    margin: 0px 0px 30px;
-    padding: 20px;
-    background-color: var(--gris-claro);
-    border-radius: 10px;
-  }
-
-  .box-dw img {
-    width: 60%;
-    height: 500px;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-
-  .dw {
-    display: flex;
-    padding: 10px;
-    width: 80%;
-  }
-
-  .dw h3 {
-    text-align: center;
-    padding: 10px;
-    font-size: 2.2em;
-  }
-
-  .dw p {
-    padding: 20px 0px;
-    font-size: 1.2em;
-    line-height: 1.4;
-  }
-
-  .dw ul {
-    list-style: none;
-    font-size: 1.2em;
-    line-height: 1.7;
-  }
+/*-- Contenedor de card de la sección DW --*/
+.dw-welcome {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5em;
+  background-color: var(--gris-suave);
+  border-radius: 10px;
+  overflow: hidden;
+}
   .dw-textbox .fa {
     color: var(--verde);
   }

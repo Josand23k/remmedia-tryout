@@ -1,108 +1,100 @@
 /*-- Import Fonts --*/
-@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  :root {
-    /* -- COLORES --*/
-    --verde: rgb(108, 191, 69);
-    --verde-oscuro: rgb(27, 84, 0);
-    --gris-primary: rgb(92, 87, 81);
-    --gris-leve: rgb(57, 53, 51);
-    --gris-suave: rgb(203, 201, 197);
-    --gris-claro: rgb(230, 230, 229);
+:root {
+  /* -- COLORES --*/
+  --verde: rgb(108, 191, 69);
+  --verde-oscuro: rgb(27, 84, 0);
+  --gris-primary: rgb(92, 87, 81);
+  --gris-leve: rgb(57, 53, 51);
+  --gris-suave: rgb(203, 201, 197);
+  --gris-claro: rgb(230, 230, 229);
 
-    /*-- FONTS --*/
-    --ff-style: 'Play', sans-serif;
-    --ff-primary: 'Arial';
-  }
-  
-  body {
-    font-family: var(--ff-primary);
-    background-color: var(--gris-claro);
-    color: var(--gris-leve);
-  }
-  
-  /*-- Menu Responsive (Logo, Nombre y Menu) --*/
-    .navbar {
-    background-color: var(--gris-suave);
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px 20px;
-    height: 70px;
-    z-index: 100;
-    border-bottom: 2px solid var(--verde-oscuro);
-  }
+  /*-- FONTS --*/
+  --ff-style: "Play", sans-serif;
+  --ff-primary: "Arial";
+}
 
-  .navbar img {
-    width: 70px;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color:var(--gris-leve);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: var(--ff-style);
-    text-transform: uppercase;
-  }
+body {
+  font-family: var(--ff-primary);
+  background-color: var(--gris-claro);
+  color: var(--gris-leve);
+}
 
-  .logo {
-    width: 40%;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .logo-text {  /*-- Name in navbar --*/
-    font-size: 1.8em;
-    letter-spacing: 1.3px;
-  }
-  
-  /*-- navbar menu --*/
-  .menu {
-    list-style: none;
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-  }
+/*-- Menu Responsive (Logo, Nombre y Menu) --*/
+.navbar {
+  background-color: var(--gris-suave);
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 20px;
+  height: 70px;
+  z-index: 100;
+  border-bottom: 2px solid var(--verde-oscuro);
+}
+.navbar img {
+  width: 70px;
+}
+.navbar a {
+  text-decoration: none;
+  color: var(--gris-leve);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: var(--ff-style);
+  text-transform: uppercase;
+}
+.logo {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+.logo-text {
+  /*-- Name in navbar --*/
+  font-size: 1.8em;
+  letter-spacing: 1.3px;
+}
 
-  .menu a {
-    font-size: 1.2em;
-    transition: transform 0.2s;
-    letter-spacing: 1.3px;
-    color: var(--gris-leve);
-  }
+/*-- navbar menu --*/
+.menu {
+  list-style: none;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+.menu a {
+  font-size: 1.2em;
+  transition: transform 0.2s;
+  letter-spacing: 1.3px;
+  color: var(--gris-leve);
+}
+.menu a:hover {
+  color: var(--verde-oscuro);
+  transform: scale(1.1);
+}
 
-  .menu a:hover {
-    color: var(--verde-oscuro);
-    transform: scale(1.1);
-  }
-  
-  /*-- Hamburger (three line) toggle --*/
-  .icon {
-    display: none;
-    color: var(--verde);
-  }
+/*-- Hamburger (three line) toggle --*/
+.icon {
+  display: none;
+  color: var(--verde);
+}
+.icon:hover {
+  color: var(--gris-claro);
+}
 
-  .icon:hover {
-    color: var(--gris-claro);
-  }
-  
-
-  /*-- sección de intro --*/
-  
+/*-- sección de intro --*/
 .intro-index {
   background-color: var(--gris-claro);
   position: relative;
-  height: 550px;
+  height: 500px;
 }
 .intro-index img {
   width: 100%;
@@ -111,8 +103,7 @@
   position: absolute;
   z-index: 1;
 }
-
-.intro-text {
+.intro-index .intro-text {
   width: 55%;
   display: flex;
   flex-direction: column;
@@ -126,42 +117,16 @@
   padding: 20px;
   background-color: rgba(10, 10, 10, 0.7);
 }
-
-.intro-text h1 {
+.intro-index .intro-text h1 {
   font-family: var(--ff-primary);
   color: var(--gris-claro);
   font-size: 2.5em;
   text-align: center;
 }
-
-.intro-text span {
+.intro-index .intro-text span {
   font-family: var(--ff-style);
   color: var(--verde);
   font-size: 2em;
-}
-
-.intro-text p {
-  font-size: 1.1em;
-  color: var(--gris-leve);
-  line-height: 1.5;
-  letter-spacing: 1.2px;
-}
-.btn-intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-}
-
-.btn-intro a {
-  text-decoration: none;
-  font-size: 1.1em;
-  font-weight: bold;
-  border-left: 4px solid var(--verde);
-  color: var(--gris-leve);
-  text-align: center;
-  padding: 5px;
-  text-transform: uppercase;
 }
 
 /*-- Welcome sección --*/
@@ -173,338 +138,275 @@
   line-height: 25px;
   letter-spacing: 1.5px;
 }
-  
+
 /*-- Sección cards servicios --*/
-
 .cards-index {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    background-color: var(--gris-claro);
-    padding: 0em 2em 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  background-color: var(--gris-claro);
+  padding: 0em 2em 2em;
 }
-
 .cards-index h2 {
   font-family: var(--ff-style);
   font-size: 2.2em;
   color: var(--gris-leve);
   text-align: center;
 }
-
 .cards-intro {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-
 .card-servicios {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    background-color: var(--gris-suave);
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px rgba(10, 10, 10, .7);
-    text-decoration: none;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: var(--gris-suave);
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(10, 10, 10, 0.7);
+  text-decoration: none;
 }
-
 .card-servicios img {
   width: 100%;
   height: 220px;
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
-
 .card-servicios .fa {
   font-size: 2.2em;
   color: var(--verde);
   text-align: center;
   padding: 10px;
 }
-
 .card-box h3 {
   text-decoration: none;
   color: var(--gris-leve);
   font-size: 1.6em;
   text-align: center;
 }
-
 .card-servicios p {
   color: var(--gris-claro);
   line-height: 1.4;
   letter-spacing: 1.2px;
 }
-  
-  /*-- Sección soluciones --*/
-  
-  .box-text {
-    display: flex;
-    flex-direction: row;
-    margin: 30px 60px;
-    padding: 20px;
-    height: 300px;
-    border-radius: 10px;
-    gap: 4em;
-  }
 
-  .box-text img {
-    width: 45%;
-    object-fit: cover;
-  }
+/*-- sección Plataformas --*/
+.plataformas-intro {
+  background-color: var(--gris-suave);
+  padding: 30px 60px;
+}
+.plataformas-intro h3 {
+  width: 40%;
+  font-size: 2em;
+}
+.plataformas-intro span {
+  font-size: 1.3em;
+}
+.box-plataformas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.linea-plataforma {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 25px;
+}
+.lp-1 {
+  width: 50%;
+}
+.linea-plataforma .fab {
+  font-size: 5em;
+  color: var(--gris-leve);
+}
+.linea-plataforma p {
+  font-size: 1.2em;
+  letter-spacing: 1.2px;
+  line-height: 1.4;
+}
+.linea-plataforma a {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  background-color: var(--gris-primary);
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: var(--gris-claro);
+  text-align: center;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.linea-plataforma a:hover {
+  background-color: var(--gris-leve);
+  color: var(--verde);
+}
 
-  .box-text h3 {
-    padding-bottom: 15px;
-    font-size: 1.9em;
-    font-family: var(--ff-primary);
-    color: var(--gris-suave);
-    text-transform: uppercase;
-  }
+/*-- Footer --*/
+footer {
+  /*-- Contenedor de la sección Footer --*/
+  background-color: var(--gris-leve);
+  padding: 20px;
+  color: var(--gris-suave);
+}
+.footer-box {
+  /*-- Contenedor de textbox de la seccion footer --*/
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 4em;
+}
+.info {
+  /*-- Contenedor de las columnas del textbox --*/
+  width: 30%;
+  margin: 20px;
+}
+.info h3 {
+  /*-- Titulo de las columnas de textbox de la sección footer --*/
+  font-size: 1.6em;
+  font-family: var(--ff-style);
+  letter-spacing: 1.3px;
+  padding-bottom: 10px;
+  color: var(--verde);
+  text-align: center;
+}
+.info a {
+  /*-- links de las columnas del textbox de la sección footer --*/
+  display: flex;
+  font-size: 1.1em;
+  line-height: 1.6;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  color: var(--gris-claro);
+}
+.info a:hover {
+  color: var(--verde);
+}
 
-  .box-text p {
-    font-size: 1.1em;
-    line-height: 1.4;
-    color: var(--gris-claro);
-  }
+.info p {
+  /*-- Texto de las columnas del textbox de la sección footer --*/
+  display: flex;
+  font-size: 1.1em;
+  line-height: 1.6;
+  letter-spacing: 1.3px;
+  text-decoration: none;
+  color: var(--gris-claro);
+}
+/*-- Columna de social media --*/
+.social-links {
+  /*-- Contenendor de la columna de los iconos de social media --*/
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+}
+.social-box {
+  /*-- Contenedor de los icnos de social media --*/
+  display: flex;
+  gap: 1.2em;
+  justify-content: space-around;
+  align-items: center;
+}
+.social-links .social-box i {
+  /*-- Diseño de los iconos --*/
+  color: var(--gris-claro);
+  font-size: 2.5em;
+}
+.social-links i:hover {
+  color: var(--verde);
+}
 
-  .box-text a {
-    text-decoration: none;
-    color: var(--gris-primary);
-  }
+/*-- Logo de la sección footer --*/
+.logofooter {
+  /*--contenedor de logo --*/
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-footer {
+  /*-- COtenedor de la imagen del logo --*/
+  width: 100px;
+  height: 100px;
+}
+.logo-footer img {
+  /*-- Imagen del logo --*/
+  width: 100%;
+}
+/*-- Textbox de la pie de pagina del copyrigth --*/
+.copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.copy a {
+  color: var(--gris-claro);
+  text-decoration: none;
+  font-family: var(--ff-style);
+  font-size: 1.1em;
+}
+.copy a:hover {
+  color: var(--verde);
+}
 
-  .box-text a:hover {
-    color: var(--gris-leve);
-  }
+/*-- 2.0 Pagina Diseño Web --*/
+/*-- Sección Intro de la página Dieño web --*/
+.intro-dw {
+  position: relative;
+  height: 500px;
+}
 
-  .text-soluciones {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-  }
+.intro-dw img {
+  background-color: var(--gris-leve);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
 
-  /*-- sección Plataformas --*/
+.intro-dw h1 {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  font-family: var(--ff-style);
+  font-size: 5em;
+  width: 40%;
+  color: var(--verde);
+  background-color: rgba(10, 10, 10, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 4px var(--verde);
+}
 
-  .plataformas-intro {
-    background-color: var(--gris-suave);
-    padding: 30px 60px;
-  }
+/*-- Sección welcome diseño web --*/
+.container-dw {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
 
-  .plataformas-intro h3 {
-    width: 40%;
-    font-size: 2em;
-  }
-
-  .plataformas-intro span {
-    font-size: 1.3em;
-  }
-
-  .box-plataformas {
-    display: flex;
-    
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .linea-plataforma {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    padding: 25px;
-  }
-
-  .lp-1 {
-    width: 50%;
-  }
-
-  .linea-plataforma .fab {
-    font-size: 5em;
-    color: var(--gris-leve);
-  }
-
-  .linea-plataforma p {
-    font-size: 1.2em;
-    letter-spacing: 1.2px;
-    line-height: 1.4;
-  }
-
-  .linea-plataforma a {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    text-decoration: none;
-    background-color:var(--gris-primary);
-
-    padding: 10px 30px;
-    border-radius: 10px;
-    color: var(--gris-claro);
-    text-align: center;
-    letter-spacing: 1.2px;
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-
-  .linea-plataforma a:hover {
-    background-color: var(--gris-leve);
-    color: var(--verde); 
-  }
-  
-  /*-- Footer --*/
-  footer {
-    background-color: var(--gris-leve);
-    padding: 20px;
-    color: var(--gris-suave);
-  }
-  
-  .footer-links {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .footer-box {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    gap: 4em;
-  }
-  
-  .info {
-    width: 30%;
-    margin: 20px;
-  }
-
-  .info h3 {
-    font-size: 1.3em;
-    padding-bottom: 10px;
-    color: var(--gris-claro);
-  }
-  .info a {
-    display: flex;
-    font-size: 1.1em;
-    line-height: 1.6;
-    text-decoration: none;
-    color: var(--gris-claro);
-  }
-
-  .info p {
-    display: flex;
-    font-size: 1.1em;
-    line-height: 1.6;
-    text-decoration: none;
-    color: var(--gris-claro);
-  }
-  
-  .logo-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  .logo-footer img {
-    width: 120px;
-  }
-  
-  .icons-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-  }
-  .social-links {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    align-items: center;
-  }
-  
-  .social-links i {
-    color: var(--gris-claro);
-    font-size: 2.2em;
-  }
-
-  .social-links i:hover {
-    color: var(--verde);
-  }
-
-  .social-box {
-    display: flex;
-    gap: 1.2em;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .copy {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    margin-top: 20px;
-  }
-
-  .copy a {
-    color: var(--gris-claro);
-    text-decoration: none;
-  }
-
-  .copy a:hover {
-    color: var(--verde);
-  }
-  
-  /*-- Pagina Diseño Web --*/
-
-  .intro-dw {
-    position: relative;
-    height: 550px;
-  }
-
-  .intro-dw img {
-    background-color: var(--gris-leve);
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-  }
-
-  .intro-dw h1 {
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    font-family: var(--ff-style);
-    font-size: 5em;
-    width: 40%;
-    color: var(--verde);
-    background-color: rgba(10, 10, 10, 0.8);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 6px 4px var(--verde);
-  }
-
-  /*-- Sección welcome diseño web --*/
-
-  .container-dw {
-    display: flex;
-    flex-direction: column;
-    padding: 3em;
-  }
-
-  .container-dw h2 {
-    text-align: center;
-    color: var(--verde);
-    font-size: 3em;
-    padding-bottom: 1em;
-  }
-  .container-dw p {
-    font-size: 1.1em;
-    line-height: 25px;
-    letter-spacing: 1.5px;
-    margin-bottom: 1em;
-  }
+.container-dw h2 {
+  text-align: center;
+  color: var(--verde);
+  font-size: 3em;
+  padding-bottom: 1em;
+}
+.container-dw p {
+  font-size: 1.1em;
+  line-height: 25px;
+  letter-spacing: 1.5px;
+  margin-bottom: 1em;
+}
 
 /*-- Contenedor de card de la sección DW --*/
 .dw-welcome {
-  width: 100%;
   height: 300px;
   display: flex;
   justify-content: space-between;
@@ -512,258 +414,284 @@
   background-color: var(--gris-suave);
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0px 6px 4px var(--gris-leve);
 }
-  .dw-textbox .fa {
-    color: var(--verde);
-  }
-
-  .precios-dw {
-    padding: 20px 0px;
-    text-align: center;
-    line-height: 2.5;
-  }
-
-  .precios-dw h4 {
-    font-size: 1.3em;
-  }
-
-  .precios-dw a {
-    text-decoration: none;
-    background-color: var(--gris-primary);
-    color: var(--gris-claro);
-    padding: 12px 90px;
-    border-radius: 10px;
-    font-weight: bold;
-    font-size: 1.4em;
-    letter-spacing: 1.2px;
-  }
-
-  .precios-dw a:hover {
-    background-color: var(--gris-leve);
-    color: var(--verde);
-  }
-
-  /*-- Seccion Beneficios/webdesign page --*/
-
-  .beneficios {
-    padding: 50px 30px 80px;
-    background-color: var(--gris-leve);
-  }
-
-  .box-beneficios h3 {
-    text-align: center;
-    padding: 10px 70px 50px;
-    font-family: var(--ff-style);
-    font-size: 3em;
-    color: var(--verde);
-  }
-
-  .beneficios-container {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1em;
-  }
-
-  .cards-bn {
-    display: flex;
-    flex-direction: column;
-    gap: 4em;
-  }
-
-  .beneficios-img {
-    width: 450px;
-  }
-
-  .beneficios-img img {
-    width: 100%;
-    object-fit: cover;
-    opacity: .2;
-  }
-  .bene-card {
-    background-color: var(--gris-claro);
-    box-shadow: 0px 0px 8px var(--verde);
-    border-radius: 10px;
-    padding: 15px;
-    width: 320px;
-    height: 150px;
-  }
-
-  .bene-card h4 {
-    text-align: center;
-    padding-bottom: 10px;
-    font-family: var(--ff-style);
-    font-size: 1.2em;
-  }
-
-  .bene-card p {
-    font-size: 1.1em;
-    line-height: 1.4;
-  }
-
-  /*-- Página de Servicios --*/
-
-  .intro-servicios {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 4em;
-    
-  }
-
-.card-serv {
-  border-radius: 10px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 5em;
-  text-align: center;
-}
-
-.cards-serv {
-  background-color: var(--gris-claro);
-  box-shadow: 0px 0px 8px var(--gris-leve);
-  border-radius: 10px;
-  padding: 15px;
-  width: 300px;
-}
-
-.cards-serv h2 {
-  padding-bottom: 15px;
-  font-family: var(--ff-style);
-  color: var(--gris-leve);
-}
-
-.cards-serv p {
-  padding-bottom: 15px;
-  font-size: 1.2em;
-  color: var(--gris-leve);
-}
-
-.cards-serv i {
-  font-size: 1.6em;
-  color: var(--gris-leve);
-}
-
-.img-servicios {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.img-servicios img {
-  width: 300px;
-  padding: 50px 20px;
-}
-
-.serv-card-img {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.serv-card-img h1 {
-  color: var(--verde);
-  font-family: var(--ff-style);
-  font-size: 2em;
-}
-
-.serv-card-img p {
-  color: var(--gris-suave);
-  width: 300px;
-  font-size: 1.2em;
-}
-
-/*-- Carrusel --*/
-.servicios-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2em;
-  padding: 0px 0px 50px;
-  background-color: var(--gris-claro);
-}
-
-.servicios-bottom img {
-  width: 100%;
-  height: 80px;
+.dw-welcome img {
+  width: 40%;
+  height: 100%;
   object-fit: cover;
 }
-
-.servicios-bottom h4 {
-  font-size: 1.2em;
-  text-align: center;
-  font-family: var(--ff-style);
-  font-size: 2em;
+.dw-textbox {
+  width: 60%;
+  padding: 10px;
+}
+.dw-textbox .fa {
+  color: var(--verde);
+}
+.dw-textbox ul {
+  list-style-type: none;
+  line-height: 25px;
+  letter-spacing: 1.3px;
 }
 
-.servicios-bottom p {
+/*-- Sección Cards de We Desing page --*/
+.cards-dw-container {
+  /*-- Container --*/
+  background-color: var(--gris-leve);
+  height: 580px;
+  padding: 2em;
+}
+.cards-dw-container h2 {
+  /*-- Title --*/
+  color: var(--gris-suave);
+  text-align: center;
+  padding: 1em;
+  font-size: 1.5em;
+}
+.cards-dw-container span {
+  color: var(--verde);
+  font-size: 2em;
+}
+.cards-dw-box {
+  /*-- Card´s container --*/
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+}
+.card-dw {
+  /*-- Container´s cards --*/
+  width: 30%;
+  height: 380px;
+  background-color: var(--gris-suave);
+  border-radius: 10px;
+  box-shadow: 0px 6px 4px var(--verde);
+  padding: 1em;
+}
+.card-dw img {
+  /*-- Card´s image --*/
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.card-dw-precio {
+  /*-- Tetxbox --*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 180px;
+  line-height: 25px;
+  letter-spacing: 1.3px;
+}
+.card-dw-precio h3 {
+  /*-- Textbox title --*/
+  font-family: var(--ff-style);
+  font-size: 1.5em;
+}
+.card-dw-precio p {
+  /*-- Textbox´s text --*/
+  font-size: 1.2em;
+}
+.card-dw-precio span {
+  color: var(--verde-oscuro);
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/*-- Seccion Beneficios/webdesign page --*/
+
+.beneficios {
+  /*-- Contenedor de la sección --*/
+  background-color: var(--gris-suave);
+  position: relative;
+  height: 650px;
+}
+.beneficios img {
+  /*-- imagen de fondo de la sección beneficios --*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 10;
+}
+/*-- Contenedro del titulo y cards --*/
+.box-beneficios {
+  /*-- Contendor del contenido --*/
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+}
+.box-beneficios h3 {
+  /*-- Titulo de la sección -- */
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: var(--ff-style);
+  font-size: 3em;
+  color: var(--verde);
+  letter-spacing: 1.3px;
+}
+.beneficios-container {
+  /*-- Contenedor de las cards de la sección de beneficios --*/
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5em;
+}
+.cards-bn {
+  /*-- Contenedor de 3 cards --*/
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.bene-card {
+  /*-- Contenedor de las cards de la sección beneficios --*/
+  background-color: var(--gris-claro);
+  box-shadow: 0px 0px 8px var(--verde);
+  border-radius: 10px;
+  padding: 15px;
+  width: 500px;
+  height: 150px;
+}
+.bene-card h4 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: var(--ff-style);
+  font-size: 1.2em;
+}
+.bene-card p {
+  font-size: 1.1em;
+  line-height: 1.4;
+}
+
+/*-- Página de Servicios Web | Desarrollo web --*/
+/*-- Sección Intro de la página Desarrollo Web --*/
+.intro-sw {
+  /*-- Contenedor de la sección --*/
+  background-color: var(--gris-leve);
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+.intro-sw img {
+  /*-- Imagen de fondo de la sección intro --*/
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.box-sw {
+  /*-- Contenedor del titulo de la sección intro --*/
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: space-around;
+  background-color: rgba(10, 10, 10, 0.7);
+  padding: 20px;
+  letter-spacing: 1.3px;
+  border-radius: 10px;
+}
+.box-sw h1 {
+  /*-- Titulo de la sección Intro --*/
+  font-family: var(--ff-style);
+  font-size: 3em;
+  text-align: center;
+  color: var(--gris-suave);
+}
+
+/*-- Contenedor de la sección Soluciones Web --*/
+.container-solw { /*-- Contenedor de la secci´n --*/
+  background-color: var(--gris-leve);
+  position: relative;
+  height: 700px;
+  width: 100%;
+}
+.container-solw img { /*-- Imagen de fondo de la sección --*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+/*-- Contenedor del textbox --*/
+.box-soluciones { /*-- Contenedor de la sección --*/
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  padding: 2em;
+}
+.box-soluciones h3 { /*-- Titulo de la sección --*/
+  font-family: var(--ff-style);
+  font-size: 3em;
+  color: var(--gris-claro);
+  background-color:rgba(10, 10, 10, 0.7);
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+}
+/*-- Contenedor de las columnas --*/
+.columnas-soluciones {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px;
+}
+
+
+/*-- Pagina de Contacto --*/
+
+.contacto-intro {
+  padding: 30px 80px 50px;
+}
+
+.contacto-intro h1 {
+  color: var(--verde);
+  font-family: var(--ff-style);
+  text-align: center;
+  padding: 50px 0px 30px;
+  font-size: 2.5em;
+}
+.contacto-box {
+  background-color: var(--gris-claro);
+  box-shadow: 0px 0px 12px var(--verde);
+  border-radius: 10px;
+  display: flex;
+  padding: 20px;
+}
+
+.contacto-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  align-items: center;
+  justify-content: center;
+}
+
+.contacto-info p {
+  text-align: center;
+  font-size: 1.1em;
+  width: 90%;
   font-size: 1.4em;
 }
 
-.carousel {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  gap: 2em;
-  padding: 0px 30px;
+.contacto-info ul {
+  list-style-type: none;
+  line-height: 1.8;
+  font-size: 1.2em;
 }
-
-.carousel i {
-  font-size: 4em;
-  color: var(--verde);
-}
-
-  /*-- Pagina de Contacto --*/
-  
-  .contacto-intro {
-    padding: 30px 80px 50px;
-  }
-
-  .contacto-intro h1 {
-    color: var(--verde);
-    font-family: var(--ff-style);
-    text-align: center;
-    padding: 50px 0px 30px;
-    font-size: 2.5em;
-  }
-  .contacto-box {
-    background-color: var(--gris-claro);
-    box-shadow: 0px 0px 12px var(--verde);
-    border-radius: 10px;
-    display: flex;
-    padding: 20px;
-  }
-
-  .contacto-info {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .contacto-info p {
-    text-align: center;
-    font-size: 1.1em;
-    width: 90%;
-    font-size: 1.4em;
-  }
-
-  .contacto-info ul {
-    list-style-type: none;
-    line-height: 1.8;
-    font-size: 1.2em;
-  }
 
 .map iframe {
   border-radius: 10px;
   box-shadow: 0px 0px 10px var(--gris-leve);
 }
 
-    /*-- formulario cotizar --*/
+/*-- formulario cotizar --*/
 
 .form-cotizar {
   background-color: var(--gris-leve);
@@ -772,7 +700,7 @@
   align-items: center;
   justify-content: center;
   padding: 70px;
-  border: 0px 4px solid var(--verde) ;
+  border: 0px 4px solid var(--verde);
 }
 
 .form-cotizar h2 {
@@ -816,357 +744,359 @@ textarea {
   color: var(--verde);
 }
 
-  /*-- MEDIA QUERIES --*/
-  @media screen and (max-width: 992px) {
-    /*-- Navbar Meduim devices --*/
-    .logo img {   /*-- Logo & Name --*/
-      width: 60px;
-    }
-    .logo-text {
-      font-size: 1.3em;
-    }
-
-    .menu a {   /*-- Text Nav menu --*/
-      font-size: 1em;
-    }
-
-      /*-- INDEX PAGE --*/
-    /*-- Intro --*/
-    .intro-index {
-      padding: 30px 0px;
-    }
-    .pop-intro {
-      padding: 0px;
-    }
-    .intro-text h1 {
-      font-size: 1.6em;
-    }
-    .intro-text span {
-      font-size: 1.3em;
-    }
-
-    /*-- Sección soluciones --*/
-    .box-soluciones {
-      margin: 30px;
-      height: 350px;
-    }
-    .box-text {
-      width: 60%;
-    }
-    .box-soluciones img {
-      width: 38%;
-    }
-    /*-- FOOTER --*/
-    .logo-footer img {
-      width: 90px;
-    }
-
-    /*-- SOLUCIONES WEB PAGE --*/
-    /*-- Sección intro --*/
-    .intro-servicios {
-      padding: 2em 0em;
-    }
-
-    .cards-serv {
-      width: 200px;
-      height: 180px;
-    }
-
-    .card-serv {
-      gap: 3em;
-    }
-
-    .img-servicios img {
-      width: 270px;
-    }
-
-    .serv-card-img h1 {
-      font-size: 1.4em;
-    }
-    .serv-card-img p {
-      font-size: 1.1em;
-    }
-
-    /*-- Sección carrusel --*/
-    .carousel i {
-      font-size: 2.5em;
-    }
+/*-- MEDIA QUERIES --*/
+@media screen and (max-width: 992px) {
+  /*-- Navbar Meduim devices --*/
+  .logo img {
+    /*-- Logo & Name --*/
+    width: 60px;
   }
-  
-  @media screen and (max-width: 768px) {
-    /*-- NAVBAR --*/
-    .logo {
-      width: 70%;
-    }
-    .menu {
-        display: none;
-    }
-  
-    .icon {
-        display: block;
-        cursor: pointer;
-        font-size: 2em;
-    }
-    .menu.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        align-items: center;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: black;
-        z-index: 1;
-    }
-  
-    .menu.active a {
-        margin: 10px 0;
-        text-align: center;
-    }
+  .logo-text {
+    font-size: 1.3em;
+  }
 
-    /*-- INDEX PAGE --*/
-    .pop-intro {
-      width: 100%;
-      flex-direction: column;
-    }
-    .intro-text {
-      width: 90%;
-    }
+  .menu a {
+    /*-- Text Nav menu --*/
+    font-size: 1em;
+  }
 
-    /*-- FOOTER --*/
-   .footer-links {
+  /*-- INDEX PAGE --*/
+  /*-- Intro --*/
+  .intro-index {
+    padding: 30px 0px;
+  }
+  .pop-intro {
+    padding: 0px;
+  }
+  .intro-text h1 {
+    font-size: 1.6em;
+  }
+  .intro-text span {
+    font-size: 1.3em;
+  }
+
+  /*-- Sección soluciones --*/
+  .box-soluciones {
+    margin: 30px;
+    height: 350px;
+  }
+  .box-text {
+    width: 60%;
+  }
+  .box-soluciones img {
+    width: 38%;
+  }
+  /*-- FOOTER --*/
+  .logo-footer img {
+    width: 90px;
+  }
+
+  /*-- SOLUCIONES WEB PAGE --*/
+  /*-- Sección intro --*/
+  .intro-servicios {
+    padding: 2em 0em;
+  }
+
+  .cards-serv {
+    width: 200px;
+    height: 180px;
+  }
+
+  .card-serv {
+    gap: 3em;
+  }
+
+  .img-servicios img {
+    width: 270px;
+  }
+
+  .serv-card-img h1 {
+    font-size: 1.4em;
+  }
+  .serv-card-img p {
+    font-size: 1.1em;
+  }
+
+  /*-- Sección carrusel --*/
+  .carousel i {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*-- NAVBAR --*/
+  .logo {
+    width: 70%;
+  }
+  .menu {
+    display: none;
+  }
+
+  .icon {
+    display: block;
+    cursor: pointer;
+    font-size: 2em;
+  }
+  .menu.active {
+    display: flex;
     flex-direction: column;
-   }
+    position: absolute;
+    align-items: center;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1;
+  }
 
-   .footer-box {
+  .menu.active a {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  /*-- INDEX PAGE --*/
+  .pop-intro {
+    width: 100%;
+    flex-direction: column;
+  }
+  .intro-text {
+    width: 90%;
+  }
+
+  /*-- FOOTER --*/
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-box {
     width: 85%;
     justify-content: space-between;
     align-items: center;
     gap: 0;
-   }
+  }
 
-   .info {
+  .info {
     width: 45%;
-   }
-   .icons-footer {
+  }
+  .icons-footer {
     padding: 20px;
-   }
-   .social-links {
+  }
+  .social-links {
     gap: 3em;
-   }
-
-    /*-- Sección cards --*/
-    .cards-intro {
-      flex-direction: column;
-    }
-    .card-servicios {
-      flex-direction: row;
-      width: 100%;
-    }
-    /*-- Sección soluciones --*/
-    .box-soluciones {
-      flex-direction: column;
-      height: 100%;
-      margin: 20px;
-    }
-    .box-text {
-      width: 100%;
-    }
-    .box-soluciones img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-    }
-
-    /*-- Sección plataformas --*/
-    .plataformas-intro {
-      padding: 30px;
-    }
-    .box-plataformas {
-      flex-direction: column;
-    }
-    .linea-plataforma {
-      flex-direction: row;
-      justify-content: space-around;
-      gap: 5em;
-    }
-    .lp-1 {
-      width: 100%;
-      flex-direction: column;
-      gap: 1em;
-    }
-
-    /*-- WED DESIGN PAGE --*/
-    /*-- Sección card soluciones --*/
-    .box-dw {
-      flex-direction: column;
-    }
-    .box-dw img {
-      width: 100%;
-      height: 150px;
-    }
-    .dw {
-      width: 100%;
-    }
-
-    /*-- SOLUCIONES WEB PAGE --*/
-    /*-- Sección Intro --*/
-    .intro-servicios {
-      flex-direction: column;
-      align-items: normal;
-      gap: 1em;
-      padding: 40px 0px;
-    }
-    .card-serv {
-      flex-direction: row;
-      padding: 20px;
-    }
-    .cards-serv {
-      width: 100%;
-    }
-    .img-servicios img {
-      padding: 20px;
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-
-    /*-- Seción plataformas --*/
-    .servicios-bottom h4 {
-      font-size: 1.5em;
-    }
-    .carousel {
-      gap: 1em;
-    }
-    .carousel i {
-      font-size: 2em;
-    }
-
-    /*-- CONTACTO PAGE --*/
-    .contacto-box {
-      flex-direction: column;
-    }
-    iframe {
-      width: 100%;
-      
-    }
   }
 
-  @media  (max-width: 600px) {
-    /*-- NAVBAR --*/
-    .logo {
-      width: 100%;
-      padding: 0;
-
-    }
-    .logo-text {
-      font-size: 1.2em;
-      width: 100%;
-    }
-
-    /*-- FOOTER --*/
-    .footer-box {
-      flex-direction: column;
-      align-items: baseline;
-    }
-
-    .copy {
-      text-align: center;
-    }
-
-    /*-- INDEX PAGE --*/
-    /*-- Intro Sección --*/
-    .pop-intro img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-    }
-    /*-- Sección cards --*/
-    .card-servicios {
-      flex-direction: column;
-    }
-    /*-- Sección plataformas --*/
-    .linea-plataforma { /*-- Contenedor de Iconos --*/
-      gap: 3em;
-    }
-    .linea-plataforma .fab { /*-- Tamaño de los iconocs --*/
-      font-size: 3em;
-    }
-    .lp-1 {
-      padding: 0;
-    }
-
-    /*-- WEB DESIGN PAGE --*/
-    /*-- Sección Intro --*/
-    .pop-dw {
-      flex-direction: column;
-      padding: 15px;
-    }
-    .pop-dw h1 {
-      width: 100%;
-    }
-    .pop-dw p {
-      width: 100%;
-    }
-
-    /*-- Sección cards --*/
-    .container-dw {
-      padding: 20px;
-    }
-    .container-dw h2 {
-      font-size: 1.7em;
-    }
-    .cards-dw {
-      padding: 0;
-    }
-
-    /*-- Sección Beneficios --*/
-    .bene-card {
-      width: 100%;
-    }
-    .box-beneficios h3 {
-      font-size: 1.8em;
-    }
-    .beneficios-container {
-      flex-direction: column;
-    }
-    .beneficios-img {
-      width: 100%;
-    }
-
-    .beneficios-img img {
-      height: 150px;
-      object-fit: cover;
-    }
-
-    /*-- SOLUCIONES WEB PAGE --*/
-    /*-- Sección Intro --*/
-    .card-serv {
-      flex-direction: column;
-    }
-    .cards-serv {
-      height: 150px;
-    }
-
-    /*-- Sección carousel --*/
-    .carousel {
-      gap: .7em;
-    }
-    .carousel i {
-      font-size: 1.2em;
-    }
-
-    /*-- CONTACTP PAGE --*/
-    /*-- Sección Intro --*/
-    .contacto-intro {
-      padding: 20px;
-    }
-    .contacto-intro h1 {
-      padding: 10px;
-    }
-
-    /*-- SEcción Map --*/
-    .contacto-info {
-      padding-bottom: 20px;
-    }
+  /*-- Sección cards --*/
+  .cards-intro {
+    flex-direction: column;
   }
+  .card-servicios {
+    flex-direction: row;
+    width: 100%;
+  }
+  /*-- Sección soluciones --*/
+  .box-soluciones {
+    flex-direction: column;
+    height: 100%;
+    margin: 20px;
+  }
+  .box-text {
+    width: 100%;
+  }
+  .box-soluciones img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  /*-- Sección plataformas --*/
+  .plataformas-intro {
+    padding: 30px;
+  }
+  .box-plataformas {
+    flex-direction: column;
+  }
+  .linea-plataforma {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5em;
+  }
+  .lp-1 {
+    width: 100%;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  /*-- WED DESIGN PAGE --*/
+  /*-- Sección card soluciones --*/
+  .box-dw {
+    flex-direction: column;
+  }
+  .box-dw img {
+    width: 100%;
+    height: 150px;
+  }
+  .dw {
+    width: 100%;
+  }
+
+  /*-- SOLUCIONES WEB PAGE --*/
+  /*-- Sección Intro --*/
+  .intro-servicios {
+    flex-direction: column;
+    align-items: normal;
+    gap: 1em;
+    padding: 40px 0px;
+  }
+  .card-serv {
+    flex-direction: row;
+    padding: 20px;
+  }
+  .cards-serv {
+    width: 100%;
+  }
+  .img-servicios img {
+    padding: 20px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  /*-- Seción plataformas --*/
+  .servicios-bottom h4 {
+    font-size: 1.5em;
+  }
+  .carousel {
+    gap: 1em;
+  }
+  .carousel i {
+    font-size: 2em;
+  }
+
+  /*-- CONTACTO PAGE --*/
+  .contacto-box {
+    flex-direction: column;
+  }
+  iframe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  /*-- NAVBAR --*/
+  .logo {
+    width: 100%;
+    padding: 0;
+  }
+  .logo-text {
+    font-size: 1.2em;
+    width: 100%;
+  }
+
+  /*-- FOOTER --*/
+  .footer-box {
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .copy {
+    text-align: center;
+  }
+
+  /*-- INDEX PAGE --*/
+  /*-- Intro Sección --*/
+  .pop-intro img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  /*-- Sección cards --*/
+  .card-servicios {
+    flex-direction: column;
+  }
+  /*-- Sección plataformas --*/
+  .linea-plataforma {
+    /*-- Contenedor de Iconos --*/
+    gap: 3em;
+  }
+  .linea-plataforma .fab {
+    /*-- Tamaño de los iconocs --*/
+    font-size: 3em;
+  }
+  .lp-1 {
+    padding: 0;
+  }
+
+  /*-- WEB DESIGN PAGE --*/
+  /*-- Sección Intro --*/
+  .pop-dw {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .pop-dw h1 {
+    width: 100%;
+  }
+  .pop-dw p {
+    width: 100%;
+  }
+
+  /*-- Sección cards --*/
+  .container-dw {
+    padding: 20px;
+  }
+  .container-dw h2 {
+    font-size: 1.7em;
+  }
+  .cards-dw {
+    padding: 0;
+  }
+
+  /*-- Sección Beneficios --*/
+  .bene-card {
+    width: 100%;
+  }
+  .box-beneficios h3 {
+    font-size: 1.8em;
+  }
+  .beneficios-container {
+    flex-direction: column;
+  }
+  .beneficios-img {
+    width: 100%;
+  }
+
+  .beneficios-img img {
+    height: 150px;
+    object-fit: cover;
+  }
+
+  /*-- SOLUCIONES WEB PAGE --*/
+  /*-- Sección Intro --*/
+  .card-serv {
+    flex-direction: column;
+  }
+  .cards-serv {
+    height: 150px;
+  }
+
+  /*-- Sección carousel --*/
+  .carousel {
+    gap: 0.7em;
+  }
+  .carousel i {
+    font-size: 1.2em;
+  }
+
+  /*-- CONTACTP PAGE --*/
+  /*-- Sección Intro --*/
+  .contacto-intro {
+    padding: 20px;
+  }
+  .contacto-intro h1 {
+    padding: 10px;
+  }
+
+  /*-- SEcción Map --*/
+  .contacto-info {
+    padding-bottom: 20px;
+  }
+}
